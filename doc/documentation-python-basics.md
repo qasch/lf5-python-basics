@@ -31,5 +31,33 @@ Nach dem Download von `python` stehen folgende Tools zur Verfügung:
 * nützlich, um mehrmals auf den gleichen Wert/Inhalt zugreifen zu können
 * können ihren Inhalt im Laufe des Programms ändern (*Variable/variabel*)
 
-## Datentypen
+# Datentypen
 
+## Integer
+* Ganze (natürliche) Zahl
+* in Python: `int`
+* z.B. `5`
+
+## Float
+* Fliesskommazahl
+* engl. "to float" <=> "fliessen"
+* in Python: `float`
+* z.B. `5.23452`
+
+## String
+* Text
+* muss entweder in einfache oder doppelte Hochkommata eingefasst werden
+* in Python: `str`
+* z.B. `"Hallo"`
+
+## Boolean
+* Wahrheitswert
+* entweder `True` oder `False`
+* in Python: `bool`
+
+
+## Casting
+Umwandeln eines Datenyps in einen anderen:
+
+- `int(4.3)`
+- `float(2)`
