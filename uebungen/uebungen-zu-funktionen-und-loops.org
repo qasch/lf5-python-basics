@@ -1,0 +1,31 @@
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+TITLE:
+
+* Übungen Zu Funktionen Und Loops
+
+
+* Funktionen
+
+1. Schreibt ein Programm mit Namen =temperature-converter.py=, welches zwei Funktionen definiert:
+   - =convert_cel_to_far()=, welche einen Float-Parameter (Temperatur in Celsius) entgegennimmt und einen =float= zurückgibt, der die gleiche Temperatur in Fahrenheit ausgibt. Nutzt dazu die Formel ~F = C * 9/5 + 32~.
+   - =convert_far_to_cell()=, welche obige Umwandlung von Fahrenheit in Celsius vornimmt. Nutzt dazu folgende Formel: ~C = (F - 32) * 5/9~
+2. Das Programm soll die Ergebnisse auf zwei Nachkommastellen gerundet angeben (Nutzt entweder =round()= oder die Formatierung in einem F-String). Die Ausgabe könnte wie folgt aussehen:
+   #+begin_src
+   Bitte einen Temperatur in Grad Celsius angeben: 37
+   37 Grad Celsius sind 98.60 Grad Fahrenheit
+
+   Bitte eine Temperatur in Grad Fahrenheit angeben: 72
+   72 Grad Fahrenheit sind 22.22 Grad Celsius
+      #+end_src
+
+
+* Loops
+
+1. Schreibt einen =for= Loop, der alle Integer zwischen 2 und 10 ausgibt, jeden auf einer neuen Zeile. Nutzt dafür =range()=
+2. Macht das gleiche nun mit einem =while= Loop.
+3. Schreibt einen Funktion mit dem Namen =doubles()=, welche eine Ganzzahl entgegennimmt und diese verdoppelt. Nutzt anschliessend diese Funktion =doubles()= in einem Loop, welcher die übergebene Zahl drei Mal verdoppelt. Mit der Zahl 2 würde folgendes ausgegeben werden:
+   #+begin_src
+   4
+   8
+   16
+   #+end_src
