@@ -4,10 +4,9 @@
 
 Der Name einer Variablen wird auch *Bezeichner* genannt. Bei der Vergabe eines Namens sind folgende Regeln zu beachten:
 * erlaubt sind Buchstaben und Zahlen, keine Sonderzeichen
-* obwohl Umlaute grundsätzlich erlaubt sind, sollten diese
-  unbedingt vermieden werden (ü -> ue, ä -> ae etc.)
-* ausser dem Unterstrich (auch am Anfang eines Bezeichners)
-* Zahlen dürfen nicht am Anfang stehen
+* ausser dem Unterstrich, dieser ist erlaubt (auch am Anfang eines Bezeichners oder als einzelnes Zeichen)
+* obwohl Umlaute grundsätzlich erlaubt sind, sollten diese unbedingt vermieden werden (ü -> ue, ä -> ae etc.)
+* Zahlen dürfen nicht am Anfang eines Bezeichners stehen
 
 Variablen kann ein Wert zugewiesen werden.
 
@@ -27,7 +26,7 @@ meine_variable = "wert"
 * `=` ist der *Zuweisungsoperator*
 * `"wert"` ist ein *String Literal*
 
-Variablen können aber nicht nur einzelne fixe Werte aufnehmen, sondern auch ganze Ausdrücke:
+Variablen können aber nicht nur einzelne feststehende Werte aufnehmen, sondern auch ganze Ausdrücke:
 
 ```
 ergebnis = 3 + 5
@@ -55,10 +54,10 @@ Datenstruktur aufgebaut ist und welche Operationen man mit diesen Daten (in Pyth
 
 In Python gibt es unter anderem folgende Datentypen:
 
-* Ganze Zahl | /Integer/ | `int`
-* Gleitkommazahl | /Float/ | `float`
-* Zeichenkette | /String/ | `str`
-* Wahrheitswert | /Boolean/ | `bool`
+Ganze Zahl | /Integer/ | `int`
+Gleitkommazahl | /Float/ | `float`
+Zeichenkette | /String/ | `str`
+Wahrheitswert | /Boolean/ | `bool`
 
 Eine Variable enthält immer einen bestimmten Datentyp, z.B. einen Integer, einen String etc.
 
@@ -69,8 +68,7 @@ ganze_zahl = 8         # 8 ist ein Integer (ganze Zahl)
 komma_zahl = 3.234     # 3.234 ist ein Float (Gleitkommazahl)
                        # hier ist der Punkt (.) der Dezimaltrenner und nicht das Komma (,)
 text = "irgendwas"     # "irgendwas" ist ein String (Zeichenkette)
-wahrheitswert = True   # True ist ein Boolean (Wahrheitswert: 
-                       #  entweder True (wahr) oder False (falsch)
+wahrheitswert = True   # True ist ein Boolean (Wahrheitswert: entweder True (wahr) oder False (falsch)
 ```
 
 ## Casting
@@ -110,9 +108,9 @@ Folgendes geht aber z.B. nicht:
 ```
 mein_satz = "Ich kann nicht in einen Integer gecastet werden"
 int_satz = int(mein_satz)  # -> führt zu einem Fehler im Programm
-Traceback (most recent call last):
-  File "<input>", line 1, in <module>
-ValueError: invalid literal for int() with base 10: 'Ich kann nicht in einen Integer gecastet werden'
+>>> Traceback (most recent call last):
+>>>   File "<input>", line 1, in <module>
+>>> ValueError: invalid literal for int() with base 10: 'Ich kann nicht in einen Integer gecastet werden'
 ```
 
 Den Datentyp kann man mit dem *Builtin* `type()` ermitteln:
@@ -144,7 +142,7 @@ float()
 *Builtins* nehmen *Parameter (Argumente)* entgegen. Diese werden von der Funktion verarbeitet 
 (*EVA* Prinzip).
 
-Inhalt von mein_satz ausgeben:
+Inhalt von `mein_satz` ausgeben:
 ```
 print(mein_satz)         # mein_satz ist der Parameter/das Argument
 ```
@@ -177,11 +175,11 @@ Folgendes geht nicht:
 ```
 upper(mein_string)    
 ```
-Das geht so nicht, denn `upper()` ist eine Methode der Klasse *String* und keine Funktion oder Builtin
+Das geht so nicht, denn `upper()` ist eine Methode der Klasse *String* und keine Funktion oder Builtin.
 
 Es gibt natürlich nicht nur String Methoden, sondern jede Klasse in Python hat ihre eigenen Methoden implementiert.
 
-## Strings Indexing
+## String Indexing
 
 Über *Indexing* kann auf ein einzelnes Element (in diesem Fall ein Buchstabe) des String Objekts zugegriffen werden:
 
@@ -212,7 +210,7 @@ print(mein_string[10])
 
 WICHTIG: Computer fangen in der Regel bei 0 an zu zählen!
 
-Genauer: Die einzelnen Elemente (eines iterierbaren Objekts) werden über ihren *Index* angesprochen.
+Die einzelnen Elemente (eines iterierbaren Objekts) werden über ihren *Index* angesprochen.
 
 Der Index startet immer bei 0.
 
@@ -249,14 +247,14 @@ Dies ist ein wichtiger Unterschied zum Indexing (s.o.):
 
 ```
 print(mein_string[4:600])
-# >>> 'in'
+>>> 'in'
 ```
 
 Die obere oder untere Grenze kann auch weggelassen werden:
 
 ```
 print(mein_string[4:])
-# >>> 'in'
+>>> 'in'
 ```
 
 ## Verzweigungen - If-Statements
@@ -391,7 +389,7 @@ print("Hallo " + name + " du bist " + str(alter))     # so funktioniert es
 ### F-String
 
 F-Stings sind die übersichtlichste und komfortabelste Art, formatierte Strings auszugeben oder Strings und Variablen 
-zu verknüpfen.
+zu verknüpfen. Hier muss in diesem Fall nicht selbst gecastet werden:
 
 ```
 name = "Peter"
@@ -430,7 +428,7 @@ def sag_hallo(name):
 
 # Funkionsaufruf
 sag_hallo('Peter')
-# >>> 'Hallo Peter'
+>>> 'Hallo Peter'
 ```
 
 Funktionen müssen definiert / deklariert werden. Um sie aber zu nutzen, müssen sie zusätzlich aufgerufen werden.
