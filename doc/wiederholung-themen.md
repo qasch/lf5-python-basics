@@ -449,7 +449,7 @@ In Python gibt es zwei Arten von Schleifen: Die `while` und die `for` Schleife.
 
 ### While Schleife
 ```
-x = 110
+x = 0
 while x < 10:             # x < 10 ist die zu prüfende Bedingung
     print(x, sep=" ")     # dieser Block wird wiederholt ausgeführt
     x = x + 1             # Wichtig, damit wir keine Endlosschleife bauen! -> Inkrement
