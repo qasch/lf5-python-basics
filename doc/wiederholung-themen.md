@@ -54,10 +54,12 @@ Datenstruktur aufgebaut ist und welche Operationen man mit diesen Daten (in Pyth
 
 In Python gibt es unter anderem folgende Datentypen:
 
-Ganze Zahl | /Integer/ | `int`
-Gleitkommazahl | /Float/ | `float`
-Zeichenkette | /String/ | `str`
-Wahrheitswert | /Boolean/ | `bool`
+Name            | Bezeichnung   | in Python
+----------------|---------------|-----------
+Ganze Zahl      | /Integer/     | `int`
+Gleitkommazahl  | /Float/       | `float`
+Zeichenkette    | /String/      | `str`
+Wahrheitswert   | /Boolean/     | `bool`
 
 Eine Variable enthält immer einen bestimmten Datentyp, z.B. einen Integer, einen String etc.
 
