@@ -249,14 +249,14 @@ Dies ist ein wichtiger Unterschied zum Indexing (s.o.):
 
 ```
 print(mein_string[4:600])
->>> 'in'
+>>> 'ing'
 ```
 
 Die obere oder untere Grenze kann auch weggelassen werden:
 
 ```
 print(mein_string[4:])
->>> 'in'
+>>> 'ing'
 ```
 
 ## Verzweigungen - If-Statements
